@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    <link rel="stylesheet/less" type="text/css" href="assets/styles/style.less">
+    <link rel="stylesheet/less" type="text/css" href="assets/styles/chat.less">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <section class="sidebar">
+                <div class="menu-bar">
+                    <div class="round-icon cursor-pointer">
+                        <img src="assets/img/user-1.png" alt="profile-logo">
+                    </div>
+
+                    <div class="options">
+                        <div class="icon cursor-pointer d-flex align-items-center">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="#51585c"
+                                    d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="popup-menu">
+                            <input type="checkbox" id="popup-control">
+                            <div class="dots-menu">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="popup-box" for="popup-control">
+                                <span>New group</span>
+                                <span>Create a room</span>
+                                <span>Stared</span>
+                                <span>Settings</span>
+                                <span>Log out</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="notification-bar">
+                    <div class="notification-icon">
+                        <i class="fa fa-bell-slash" aria-hidden="true"></i>
+                    </div>
+                    <div class="notification-detail">
+                        <p class="notification-title">Get notified of new messages</p>
+                        <div class="notification-description">
+                            <span>Turn on desktop notifications</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <span class="icon-search"></span>
+                    <input type="text" class="search-input" placeholder="Search or start new chat">
+                </div>
+                <div class="chats-list">
+                    <div class="chat-item">
+                        <div class="chat-item-info">
+                            <div class="round-icon">
+                                <img src="assets/img/user-1.png" alt="chat image">
+                            </div>
+                            <div class="chat-info-container">
+                                <p class="chat-name">Haris Zahid</p>
+                                <small class="chat-first-message text-gray">Hashir: Hi</small>
+                            </div>
+                        </div>
+                        <small class="chat-item-timestamp text-gray">Today</small>
+                    </div>
+                    <div class="chat-item selected">
+                        <div class="chat-item-info">
+                            <div class="round-icon">
+                                <img src="assets/img/user-2.png" alt="chat image">
+                            </div>
+                            <div class="chat-info-container">
+                                <p class="chat-name">Hashir Umar</p>
+                                <small class="chat-first-message text-gray">Haris: Hello</small>
+                            </div>
+                        </div>
+                        <small class="chat-item-timestamp text-gray">Monday</small>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-item-info">
+                            <div class="round-icon">
+                                <img src="assets/img/user-1.png" alt="chat image">
+                            </div>
+                            <div class="chat-info-container">
+                                <p class="chat-name">Usman Afzal</p>
+                                <small class="chat-first-message text-gray"></small>
+                            </div>
+                        </div>
+                        <small class="chat-item-timestamp text-gray">05/10/2021</small>
+                    </div>
+                </div>
+            </section>
+            <section class="selected-chat">
+                <div class="menu-bar">
+                    <div class="selected-chat-container">
+                        <div class="round-icon cursor-pointer">
+                            <img src="assets/img/user-2.png" alt="profile-logo">
+                        </div>
+                        <div class="selected-chat-info">
+                            <p class="chat-name">Hashir Umar</p>
+                            <small class="selected-chat-status text-gray">online</small>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div class="cursor-pointer mr-2">
+                            <span class="icon-search icon-search-20"></span>
+                        </div>
+
+                        <div class="popup-menu">
+                            <input type="checkbox" id="popup-control">
+                            <div class="dots-menu">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="popup-box" for="popup-control">
+                                <span>Contact info</span>
+                                <span>Report business</span>
+                                <span>Block</span>
+                                <span>Select messages</span>
+                                <span>Mute notifications</span>
+                                <span>Clear messages</span>
+                                <span>Delete chat</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-area">
+
+                </div>
+                <div class="chat-box">
+                    <span class="smilie-icon"></span>
+                    <span class="attachment-icon"></span>
+                    <div class="chat-box-text-container">
+                        <div class="chat-box-text" contenteditable="true" data-placeholder="Type a message"></div>
+                    </div>
+                    <span class="microphone-icon"></span>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
