@@ -21,10 +21,6 @@ body {
           align-items: center;
 }
 
-.container {
-  width: 50%;
-}
-
 .container .windmill {
   display: -webkit-box;
   display: -ms-flexbox;
